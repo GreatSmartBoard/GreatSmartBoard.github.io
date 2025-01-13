@@ -15,27 +15,6 @@
 </script>
 <title>智能看板</title> 
 <script>
-    // 定义滚动后显示元素的函数
-  function revealElement() {
-  	
-    let myElement1 = document.getElementById('baoming-right');
-    let myElement2 = document.getElementById('baoming-left');
-    if (window.pageYOffset > 400) {
-    	
-     // h.hidden-
-     myElement1.hidden=false
-     myElement2.hidden=false
-      //myElement2.classList.add('show_ele');
-    } else {
-     myElement1.hidden=true
-     myElement2.hidden=true
-   // myElement1.classList.remove('show_ele');
-   //   myElement2.classList.remove('show_ele');
-    }
-  }
- 
-  // 监听滚动事件
-  window.addEventListener('scroll', revealElement);
 
 </script>
 <style>
@@ -228,9 +207,17 @@ margin-bottom: 56px;
             <div class="propaganda-content-module_activity-introduce-container flex gap-16 w-full">
                 <div
                     class="propaganda-content-module_activity-introduce  flex-1 flex items-center justify-center " >
-                    <div class="propaganda-content-module_activity-introduce-item flex " style="flex-wrap: wrap"><img src="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xinghuoconsole/assets_aa791b47c33f93fed30f01f42c0f9fe67e6c4697.png">
+                    <div class="propaganda-content-module_activity-introduce-item flex justify-center" style="flex-wrap: wrap">
+                    	<img src="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xinghuoconsole/assets_aa791b47c33f93fed30f01f42c0f9fe67e6c4697.png">
                         <div style="margin-left: 20px;">
                             <div class="propaganda-content-module_activity-introduce-title ">面向人群</div>
+                            <div class="propaganda-content-module_activity-introduce-detail ">
+                                HBG二租商,有制作报表/获取数据需求的所有<br>同事均可一键报名
+                               
+                            </div>
+                        </div>
+			            <div style="margin-top: 20px;">
+                            
                             <div class="propaganda-content-module_activity-introduce-detail ">
                                 <ul>
                                     <li>二租商大区运营、城市运营</li>
@@ -238,27 +225,46 @@ margin-bottom: 56px;
                                 </ul>
                             </div>
                         </div>
-			
                     </div>
                 </div>
                 <div
                     class="propaganda-content-module_activity-introduce  flex-1 flex items-center justify-center ">
-                    <div class="propaganda-content-module_activity-introduce-item flex "><img src="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xinghuoconsole/assets_a29f8bc2cd02b8e6c9b3b28d7e2558de228b92bd.png">
+                    <div class="propaganda-content-module_activity-introduce-item flex justify-center" style="flex-wrap: wrap">
+                    	<img src="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xinghuoconsole/assets_a29f8bc2cd02b8e6c9b3b28d7e2558de228b92bd.png">
                         <div style="margin-left: 20px;">
                             <div class="propaganda-content-module_activity-introduce-title ">大赛数据<a
                                     class="propaganda-content-module_download-data " target="_blank">查看</a>
                             </div>
                             <div class="propaganda-content-module_activity-introduce-detail ">
-                                组委会提供了一份虚拟数据供大家使用<br>包含各个层级数据以及全部指标</div>
+                                组委会提供了一份虚拟数据供大家使用.<br>无需担心核心数据安全问题</div>
+                        </div>
+                       <div style="margin-top: 20px;">
+                            
+                            <div class="propaganda-content-module_activity-introduce-detail ">
+                                <ul>
+                                    <li>覆盖 大区/城市/部门/销售/公司 等各个层级的数据</li>
+                                    <li>覆盖所有已有指标,并可根据需要自由创建虚拟指标</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div
                     class="propaganda-content-module_activity-introduce  flex-1 flex items-center justify-center ">
-                    <div class="propaganda-content-module_activity-introduce-item flex "><img src="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xinghuoconsole/assets_03d2c73a746c0a983e96aaa1b7e05047b8bf659e.png">
+                    <div class="propaganda-content-module_activity-introduce-item flex  justify-center" style="flex-wrap: wrap">
+                    	<img src="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xinghuoconsole/assets_03d2c73a746c0a983e96aaa1b7e05047b8bf659e.png">
                         <div style="margin-left: 20px;">
                             <div class="propaganda-content-module_activity-introduce-title ">参赛作品</div>
                             <div class="propaganda-content-module_activity-introduce-detail ">基于大赛提供的智能看板比赛域，<br>制作的完整的业务数据看板
+                            </div>
+                        </div>
+                              <div style="margin-top: 20px;">
+                            
+                            <div class="propaganda-content-module_activity-introduce-detail ">
+                                <ul>
+                                    <li>获奖作品将在系统优秀作品库中署名展示,可一键克隆</li>
+                                    <li>所有用户的作品均可一键复制到正式环境中</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -662,6 +668,29 @@ const app = new Vue({
             $('#button-right').css("transform", "scale("+scale+")");
             $('#button-left').css("transform", "scale("+scale+")");
         });
+
+
+    // 定义滚动后显示元素的函数
+  function revealElement() {
+  	
+    let myElement1 = document.getElementById('baoming-right');
+    let myElement2 = document.getElementById('baoming-left');
+    if (window.pageYOffset > document.body.clientWidth / 1920 *400) {
+    	
+     // h.hidden-
+     myElement1.hidden=false
+     myElement2.hidden=false
+      //myElement2.classList.add('show_ele');
+    } else {
+     myElement1.hidden=true
+     myElement2.hidden=true
+   // myElement1.classList.remove('show_ele');
+   //   myElement2.classList.remove('show_ele');
+    }
+  }
+ 
+  // 监听滚动事件
+  window.addEventListener('scroll', revealElement);
 
 
     </script> 
