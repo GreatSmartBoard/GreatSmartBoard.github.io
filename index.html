@@ -9,6 +9,9 @@
 <link href="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xhactivity/index.9d5ac8bd.css" type="text/css" rel="stylesheet" />
 <link href="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xhactivity/vendor.04e1f4f3.css" type="text/css" rel="stylesheet" />
 
+<script src="https://rrc.58cdn.com.cn/xinghuo_apply/xtiper.min.js"></script>
+<link href="https://rrc.58cdn.com.cn/xinghuo_apply/xtiper.min.css" type="text/css" rel="stylesheet" />    
+    
 <script src="https://rrc.58cdn.com.cn/xinghuo_apply/default-passive-events.js"></script>
 <script src="https://rrc.58cdn.com.cn/xinghuo_apply/index.min.js" type="application/javascript"></script>
 <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js">
@@ -705,7 +708,18 @@ const app = new Vue({
 </script>
   <script type="text/javascript">
  //window.open('https://wuba.xinghuo.58.com/visualization/share/26715','_blank', 'width=800,height=600,left=200,top=100');
+ xtip.open({
+type: 'url',
+content: 'https://wuba.xinghuo.58.com/visualization/share/26715',
+title: '报名参赛',
+width: '800px',
+height: '360px',
+min: false,
+max: false,
+lock:true,
 
+closeBtn: true,
+});
         // 一开始加载就适应屏幕的宽高
         $(function() {
             //offsetWidth： 获取body元素对象的宽度，即offsetWidth=width+padding+border availWidth：返回当前屏幕宽度
