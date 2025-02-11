@@ -31,18 +31,36 @@ transform-origin:0px 0px 0px;
 }
 
 #xinghuo-activity,#button-left{
-	transform-origin:0px 0px 0px;
+    transform-origin:0px 0px 0px;
 }
 #button-right{
-	transform-origin: right top;
+    transform-origin: right top;
 }
 #xinghuo-activity{
-	width: 1920px !important;
+    width: 1920px !important;
 }
 .big {
 font-size: 28px;
 
 }
+.propaganda-module_propaganda {
+background-image: url(https://rrc.58cdn.com.cn/xinghuo_apply/bk4.webp) !important; 
+background-size: 100% 100% !important;
+     
+}
+.header-module_header_new {
+    height: 4rem;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    height: 56px;
+    z-index: 999;
+    min-height: 56px;
+    max-height: 56px;
+
+}
+
 .woman {
 width: 250px;
 height: 250px;
@@ -81,7 +99,7 @@ src: url(https://c.58cdn.com.cn/xinghuo_apply/Impacted2.0.ttf)
 }
 .propaganda-content-module_propaganda-content .propaganda-content-module_activity-introduce {
 
-	height:220px !important;
+    height:220px !important;
 }
 
 ol,
@@ -89,7 +107,13 @@ ul {
 list-style: circle !important;
 padding-left: 2em !important;
 }
-
+.signup{
+    position: fixed;
+    left:calc(50% - 300px);
+    width: 800px;
+    height: 600px;
+    z-index: 1000;
+}
 @font-face {
 font-family: 'raidercrusaderital';
 src: url(https://c.58cdn.com.cn/xinghuo_apply/raidercrusaderital.ttf)
@@ -103,10 +127,18 @@ src: url(https://c.58cdn.com.cn/xinghuo_apply/SarunsHarryPotter.ttf)
 
 .propaganda-module_container .propaganda-module_propaganda .propaganda-module_header-container .propaganda-module_header-font1 {
 
-width: 530px !important;
-top: 100px !important
+width: 580px !important;
+top: 60px !important;
+font-size: 50px !important;
 }
+.propaganda-module_container .propaganda-module_propaganda .propaganda-module_header-container .propaganda-module_header-font3 {
 
+font-size: 30px !important;
+
+}
+.propaganda-module_container .propaganda-module_propaganda .propaganda-module_header-container .propaganda-module_header-font2{
+    top:220px !important;
+}
 .smart {
 background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAABMCAMAAAFYLCnVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMAUExURQAAAEdvx0Nxw5ew3trk84qm2kNyxMDQ60RyxIun26a845my33GT0sHR7ENxxGSJzVd/yae940Nyw3+e10Rxw42p22WKzkRywz9yv3OV02aLz0RwxENxw1mBykx3xnSW1GeM0Ojt+MDO64Kh14Kh2ENxw0Rxw014xnWX0/b4/JCs3ERyxFuDzNzk9EVzxXaY1HaY1WmO0Orv+ERxxFJ8yHeZ1E96yGqP0FB7yFN9ydHc8Pn7/V6GzERywz9vv9/n9URyxO3y+cXT7J204ERyxERxw1J9yNPe8UVzxMbU7URxxENxwz9/v0NxxLnK6VN+yUJxxYSh2KzA5URwxMfV7URyxFR/ya3B5YWi2UVyxKC34UNxw5Ot3URxxENyxK7C5Yaj2aG44URyxJSu3ZSu3kVyxENxxHqa1ZWv3UNyw4il2bDE5lN8yJaw3m6R0Ymm2nyc1kRxxG+S0oqn2mKIzn2d1tbf8nCT0kNxw0RyxIuo2lZ/ykNyw6/B5f///0l1xj9qv2SKzuXr9uXr9z90v3+f1leAykp2xvP2+8vX7mWLz0NxxEVyxFiBy9ni83OW00t3xkNyxEt3x6S54r/O6uft91mCy0VxxERyw096x0x4x83Z72eNz5iw31qDy7PF50Nxw015x87a70Rxw1uEy056x6e840Nzw0Nyw097x097yNDc8ICe18PS65uz37bI57bI6I6p3EJzxUNxw6m+5ERxxIGf2MTT7Jy04ERyxI+q3EJywoKg16q/5IKg2HWW1LjK6ERyw4Si2FyDzENywp+34U95x2qO0ERxxD9/v12Ey4Wj2HiZ1HiZ1UNxwkZyxZOu3WuP0F6FzIak2nma1VF7yGyQ0GyQ0UNww0Rxw4el2UZxxlV+yURyxG2R0UVyxERyxGCHzVN9yfz9/kl1xUZzxcfU7URxxENyw2GIzeLp9lR+yUd0xfD0+mKJztbg8kh1xUVvxGOKzrzM6laAyj92yEx4xkl2xsrX7rDD5kNyw6O54r7O65av3liCyqS64hTDJmoAAAD7dFJOUwAg1////4//g///////i////5f/bP//eBT//2iA//////////+b4//////v//8s/////+v+//////7///88EP//////7Dj/////+/QI9P//WP//NP/0////6P/8/6/H////u///8MP//8//////////v////////9Nk///f////DP///xj///////+HYP////+T//////9cdP7///////98//9w////QKP///////////9Un//n////8/9Q//////+n//9M////9wT/////SCj//////////0Sr/yT+t///+P////7//7PL//////////8w////HP7////btYi2LAAAAAlwSFlzAAAXEQAAFxEByibzPwAAEKpJREFUaEPtWg94XFVWv5PaPwtL3ZLG9i1T2WchGGOLmYrUJm1/WWWrYxxKoXb9Q8jD3WLQlMyO9F/Gs61gkqVxd1nXLWhKiZ3dwA5q05gtfW1VpF2TLbYouAK1WZuRKakJFRGknQJ7zr13JpNkwrb6fat+3/zy8ua9e8+9555zzz33nPee+h+AsC0yoF5EVb9qm0kERepLZOsw0qUQIOL7w5lkEiAAtq4UeArKnzPoqVNcGgz4OJKt82OxhU+opO+RQiTi4BnCjdk66SKqHKri6xDzA+2/7qypUgfj8Tj/7BMmmhPiJx80Vd9fMPPP7GXuUN3qSvJJBVQ4ctpUtcnIZOBKJZPJZkVVrDQDDO1/R3WR8qKqB+hXSfKVqauLnY6R8lmF83aSE0kpjxZ8VdeoAPdHilqFkITXrW5OyayP2TwYhRnqQaBc1ak4//1voNv+CjqU2haw1xqBW/jEpZOA374RCVYjy7PxlArB+8joCdHuo4j2MtQvI4PGDDDL0muwOnxuJXKrYDw+C1Xx+DWiGzYXn6hBqQZCL52ONWXVJNjMatTga7EqeCoYVKrm81t5lpL+ZtUR4W6rz21LP2MaaATEHBkUta3I2Sblvi71oA684nN5PfVqcov5vudVed40OsWUKtKD9iqecqVSTqvjtLo89KU82RhUg/kjLCKHE3nm1LGap8FeG0illE5ArZ4Tdid8HZqHDgoO8GWgebfLVsHrRik2GoVXXqA8U+xDCAjF4xml+texSYV4jpV6CcjEtQUqtjQM8wyLCWchhsBrkl2hQoaok144w6Xxn6BVyeQVyaRSEX+38xQPZrmh10Dryp+0jQbEj1GlODOw99TDiwsntSYWOy0jzaKe6tJBikR6lJrBVJV9ntfJVt+i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');
 }
@@ -133,7 +165,10 @@ margin-bottom: 56px;
 <body>
 
 <div id="app">
-	    <div id="button-left"
+
+<!--<iframe class="signup" src="https://wuba.xinghuo.58.com/visualization/share/26715" width="600" height="400"></iframe>-->
+
+        <div id="button-left"
         style="width:250px;height:100vh; display:flex;justify-content:center; position:fixed ;align-items: center;z-index:3;flex-direction: column;">
         <div style="z-index:100">
             <div class="man">
@@ -141,7 +176,7 @@ margin-bottom: 56px;
         </div>
         </div>
         <div style="height:28px">
-            <el-button id="baoming-right" size="mini" type="primary" hidden="true">开始报名</el-button>
+            <el-button id="baoming-right" size="mini" type="primary" hidden="true" @click="window.open('https://wuba.xinghuo.58.com/visualization/share/26715','_blank', 'width=800,height=600,left=200,top=100')">开始报名</el-button>
         </div>
     </div>
     <div id="button-right"
@@ -150,12 +185,12 @@ margin-bottom: 56px;
 
         </div>
         <div style="height:28px">
-            <el-button id="baoming-left" size="mini" type="primary" hidden="true" style="z-index:1">开始报名
+            <el-button id="baoming-left" size="mini" type="primary" hidden="true" style="z-index:1" @click="window.open('https://wuba.xinghuo.58.com/visualization/share/26715','_blank', 'width=800,height=600,left=200,top=100')">开始报名
             </el-button>
         </div>
     </div>
 <div id="xinghuo-activity">
-<header class="header-module_header items-center justify-center" id="header"
+<header class="header-module_header_new items-center justify-center" id="header"
     style="min-width: 1260px; background: transparent; position: absolute;">
     <div class="flex items-center header-module_header_container">
         <div class="flex-1"></div>
@@ -165,8 +200,23 @@ margin-bottom: 56px;
 <div class="absolute w-full propaganda-module_container">
     <div class="propaganda-module_propaganda flex justify-center">
         <div class="propaganda-module_header-container flex justify-center">
-            <span class="propaganda-module_header-font1"><span style="font-family:'SarunsHarryPotter'">MDC智能看板可视化大赛</span></span><span class="propaganda-module_header-font2">智能看板可视化大赛，希望通过比赛，为房产业务的一线/中台/管理提供一个分享、交流的平台</span><a
+            <span class="propaganda-module_header-font1"><span style="font-family:'SarunsHarryPotter'">MDC智能看板可视化大赛</span>
+           <span class="propaganda-module_header-font3" style="margin-left:260px !important;font-family:'SarunsHarryPotter'">——数据驱动业务决策</span>
+           </span>
+            
+            <span class="propaganda-module_header-font2" ><span style="font-size: 20px!important;font-weight: bold;color: #ffffff">通过可视化工具优化运营效率、提升业务洞察</span>
+            <ul>
+                <li>提升数据可视化能力，促进数据驱动决策</li>
+                <li>增强运营与业务线管理人员的数据分析意识</li>
+                <li>展示数据部门的数据支持能力，推动跨部门协作</li>
+            </ul>
+            </span>
+
+
+
+            <a  target="_blank" @click="window.open('https://wuba.xinghuo.58.com/visualization/share/26715','_blank', 'width=800,height=600,left=200,top=100')" 
                 class="ant-btn ant-btn-primary propaganda-module_sign-up-btn"><span>前往报名页面</span></a><a
+                href="https://docs.qq.com/aio/DRklVaXFHaFVTanNu?p=Y9yQnlU7CL2b46IDV4cOVL"
                 target="_blank"
                 class="ant-btn ant-btn-primary propaganda-module_xinghuo-btn"><span>了解智能看板</span></a>
             <div class="propaganda-module_steps flex"><a
@@ -208,7 +258,7 @@ margin-bottom: 56px;
                 <div
                     class="propaganda-content-module_activity-introduce  flex-1 flex items-center justify-center " >
                     <div class="propaganda-content-module_activity-introduce-item flex justify-center" style="flex-wrap: wrap">
-                    	<img src="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xinghuoconsole/assets_aa791b47c33f93fed30f01f42c0f9fe67e6c4697.png">
+                        <img src="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xinghuoconsole/assets_aa791b47c33f93fed30f01f42c0f9fe67e6c4697.png">
                         <div style="margin-left: 20px;">
                             <div class="propaganda-content-module_activity-introduce-title ">面向人群</div>
                             <div class="propaganda-content-module_activity-introduce-detail ">
@@ -216,7 +266,7 @@ margin-bottom: 56px;
                                
                             </div>
                         </div>
-			            <div style="margin-top: 20px;">
+                        <div style="margin-top: 20px;">
                             
                             <div class="propaganda-content-module_activity-introduce-detail ">
                                 <ul>
@@ -230,7 +280,7 @@ margin-bottom: 56px;
                 <div
                     class="propaganda-content-module_activity-introduce  flex-1 flex items-center justify-center ">
                     <div class="propaganda-content-module_activity-introduce-item flex justify-center" style="flex-wrap: wrap">
-                    	<img src="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xinghuoconsole/assets_a29f8bc2cd02b8e6c9b3b28d7e2558de228b92bd.png">
+                        <img src="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xinghuoconsole/assets_a29f8bc2cd02b8e6c9b3b28d7e2558de228b92bd.png">
                         <div style="margin-left: 20px;">
                             <div class="propaganda-content-module_activity-introduce-title ">大赛数据<a
                                     class="propaganda-content-module_download-data " target="_blank">查看</a>
@@ -252,7 +302,7 @@ margin-bottom: 56px;
                 <div
                     class="propaganda-content-module_activity-introduce  flex-1 flex items-center justify-center ">
                     <div class="propaganda-content-module_activity-introduce-item flex  justify-center" style="flex-wrap: wrap">
-                    	<img src="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xinghuoconsole/assets_03d2c73a746c0a983e96aaa1b7e05047b8bf659e.png">
+                        <img src="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xinghuoconsole/assets_03d2c73a746c0a983e96aaa1b7e05047b8bf659e.png">
                         <div style="margin-left: 20px;">
                             <div class="propaganda-content-module_activity-introduce-title ">参赛作品</div>
                             <div class="propaganda-content-module_activity-introduce-detail ">基于大赛提供的智能看板比赛页面制作<br>的完整的业务数据看板
@@ -485,7 +535,7 @@ margin-bottom: 56px;
         <div>
             <div class="propaganda-module_statement-title ">大赛声明</div>
             <div class="propaganda-module_statement-content ">
-                您参加本次比赛的行为视为同意并接受本规则约束。如您不同意本规则任一部分内容，请您立即停止参加本次比赛。<br>1、 您应当以真实身份注册账号，应当保证在注册当时所提供的信息、资料的真实性、完整性、有效性，并且对其承担相应的法律责任。<br>2、 参赛作品必须保证原创性，不侵犯任何第三方知识产权或者其他权利，不违反任何中华人民共和国的有关法律法规，不存在赛事组委会认为不适当的内容。<br>3、 赛事所提供的数据仅供参赛使用，不得用于其他任何目的；参赛者自行虚拟的数据如产生任何纠纷，赛事组委会不承担任何责任。<br>4、 参赛作品的知识产权归参赛者所有。赛事组委会（包括其继受者、关联方）有权将参赛作品、作品相关、作者信息用于授权网站浏览及下载、商业宣传等活动项目。<br>5、 赛事组委会有权根据赛事进展调整日期，修订规则；赛事组委会拥有对赛事规则的最终解释权。
+                您参加本次比赛的行为视为同意并接受本规则约束。如您不同意本规则任一部分内容，请您立即停止参加本次比赛。<br>1、 您应当以真实身份注册账号，应当保证在注册当时所提供的信息、资料的真实性、完整性、有效性，并且对其承担相应的法律责任。<br>2、 参赛作品必须保证原创性，不侵犯任何第三方知识产权或者其他权利，不违反任何中华人民共和国的有关法律法规，不存在赛事组委会认为不适当的内容。<br>3、 赛事所提供的数据仅供参赛使用，不得用于其他任何目的；<br>4、 参赛作品的知识产权归参赛者所有。赛事组委会（包括其继受者、关联方）有权将参赛作品、作品相关、作者信息用于授权网站浏览及下载、商业宣传等活动项目。<br>5、 赛事组委会有权根据赛事进展调整日期，修订规则；赛事组委会拥有对赛事规则的最终解释权。
             </div>
         </div>
     </div>
@@ -654,6 +704,8 @@ const app = new Vue({
 
 </script>
   <script type="text/javascript">
+ //window.open('https://wuba.xinghuo.58.com/visualization/share/26715','_blank', 'width=800,height=600,left=200,top=100');
+
         // 一开始加载就适应屏幕的宽高
         $(function() {
             //offsetWidth： 获取body元素对象的宽度，即offsetWidth=width+padding+border availWidth：返回当前屏幕宽度
@@ -672,11 +724,11 @@ const app = new Vue({
 
     // 定义滚动后显示元素的函数
   function revealElement() {
-  	
+    
     let myElement1 = document.getElementById('baoming-right');
     let myElement2 = document.getElementById('baoming-left');
     if (window.pageYOffset > document.body.clientWidth / 1920 *400) {
-    	
+        
      // h.hidden-
      myElement1.hidden=false
      myElement2.hidden=false
