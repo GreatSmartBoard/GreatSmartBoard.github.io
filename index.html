@@ -8,6 +8,10 @@
     rel="stylesheet" />
 <link href="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xhactivity/index.9d5ac8bd.css" type="text/css" rel="stylesheet" />
 <link href="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xhactivity/vendor.04e1f4f3.css" type="text/css" rel="stylesheet" />
+<!--
+<script src="https://rrc.58cdn.com.cn/xinghuo_apply/xtiper.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/xtiper@2.7.0/xtiper.min.css" rel="stylesheet">
+<link href="https://rrc.58cdn.com.cn/xinghuo_apply/xtiper.min.css" type="text/css" rel="stylesheet" />  -->
 
 <script src="https://rrc.58cdn.com.cn/xinghuo_apply/default-passive-events.js"></script>
 <script src="https://rrc.58cdn.com.cn/xinghuo_apply/index.min.js" type="application/javascript"></script>
@@ -107,12 +111,44 @@ ul {
 list-style: circle !important;
 padding-left: 2em !important;
 }
+.el-notification{
+    width: 800px !important;
+    height: 400px !important;
+}
+.el-message-box{
+     width: 800px !important;
+    height: 402px !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
 .signup{
-    position: fixed;
-    left:calc(50% - 300px);
     width: 800px;
-    height: 600px;
+    height: 4000px;
     z-index: 1000;
+}
+.el-message-box__header {
+    position: relative;
+    padding: 0px !important;
+}
+.el-message-box__headerbtn {
+    top: 8px !important;
+}
+.el-message-box--center .el-message-box__content {
+    padding: 0px !important;
+}
+.el-message-box--center {
+    padding-bottom: 0px !important;
+}
+.el-message-box__status {
+    padding-right: 50px !important
+}
+.signup_icon{
+    display: inline-block;
+    width: :40px !important;
+    height: 40px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB0PSIxNzM5MzQxMzg1MTI3IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjIzMjciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+PHBhdGggZD0iTTAuMjM0MDU3IDUwOC42NzkzMTRDMC4yMzQwNTcgNzg5LjU2MjUxNCAyMjcuOTEzMTQzIDEwMTcuMjcwODU3IDUwOC43ODE3MTQgMTAxNy4yNzA4NTdjMjgwLjg2ODU3MSAwIDUwOC41NzY5MTQtMjI3LjY5MzcxNCA1MDguNTc2OTE1LTUwOC41NzY5MTQgMC0yODAuODY4NTcxLTIyNy42OTM3MTQtNTA4LjU2MjI4Ni01MDguNTc2OTE1LTUwOC41NjIyODZDMjI3LjkyNzc3MSAwLjExNzAyOSAwLjIzNDA1NyAyMjcuODEwNzQzIDAuMjM0MDU3IDUwOC42NzkzMTR6IiBmaWxsPSIjRUJGMkZGIiBwLWlkPSIyMzI4Ij48L3BhdGg+PHBhdGggZD0iTTc3Mi42NjY1MTQgMjY0Ljg1MDI4NmExNi43NDk3MTQgMTYuNzQ5NzE0IDAgMCAwLTE0LjY0MzItMTQuNjQzMmMtMTI4LjQwOTYtMzAuNDEyOC0yNjEuMzI0OCAxOS4xNDg4LTMzOS4wNjEwMjggMTI2LjE1NjhhMjAuNjU1NTQzIDIwLjY1NTU0MyAwIDAgMS0xMS4yNjQgNy44OTk0MjhjLTQ1LjA1NiAxMS4yNjQtODYuNzMyOCAzNC45MDM3NzEtMTE5LjM5ODQgNjguNjk1NzcyLTE1Ljc2OTYgMTUuNzY5Ni0yOS4yODY0IDMyLjY2NTYtNDAuNTUwNCA1MS44MTQ0LTkuMDExMiAxNS43ODQyMjkgNi43NTg0IDM0LjkzMzAyOSAyNC43ODA4IDI4LjE3NDYyOCAyOC4xNi0xMC4xMzc2IDU4LjU3MjgtMTUuNzg0MjI5IDg3Ljg1OTItMTUuNzg0MjI4IDAgMi4yNTI4LTEuMTI2NCA1LjY0NjYyOS0xLjEyNjQgNy44OTk0MjhhMTM2OC4zMjczMTQgMTM2OC4zMjczMTQgMCAwIDAgNjcuNTg0IDczLjIxNmMyMy42NTQ0IDIzLjY1NDQgNDcuMzA4OCA0Ni4xODI0IDcyLjEwNDIyOCA2Ny41ODQgMi4yNTI4IDAgNS42MzItMS4xMjY0IDcuODg0OC0xLjEyNjQgMCAzMC40MTI4LTQuNTA1NiA1OS42ODQ1NzEtMTUuNzY5NiA4Ny44NTkyYTE5LjI2NTgyOSAxOS4yNjU4MjkgMCAwIDAgNS42MzIgMjIuNTI4YzYuNzU4NCA1LjYzMiAxNS43Njk2IDYuNzU4NCAyMi41MjggMi4yNTI4IDE5LjE0ODgtMTEuMjY0IDM2LjA0NDgtMjQuNzgwOCA1MS44MTQ0LTQwLjU1MDQgMzIuNjY1Ni0zMi42NjU2IDU2LjMyLTc0LjM0MjQgNjguNzEwNC0xMjAuNTM5NDI4IDEuMTI2NC00LjQ5MDk3MSAzLjM2NDU3MS04Ljk5NjU3MSA3Ljg4NDgtMTEuMjY0IDEwNS44ODE2LTc3LjcwNjk3MSAxNTQuMzMxNDI5LTIxMS43NjMyIDEyNS4wMzA0LTM0MC4xNzI4eiBtLTEzNC4wNDE2IDIxNC4wMTZhNjYuMDc3MjU3IDY2LjA3NzI1NyAwIDAgMS03Mi4wODk2IDE0LjY0MzJjLTI0Ljc4MDgtMTAuMTM3Ni00MC41NTA0LTM0LjkxODQtNDAuNTUwNC02MS45NTIgMC0yNy4wMzM2IDE1Ljc2OTYtNTEuODE0NCA0MC41NTA0LTYxLjk1MmE2Ni4wNzcyNTcgNjYuMDc3MjU3IDAgMCAxIDcyLjA4OTYgMTQuNjQzMmMyNS44OTI1NzEgMjUuOTA3MiAyNS44OTI1NzEgNjguNzEwNCAwIDk0LjYxNzZ6IiBmaWxsPSIjMzc3RkZDIiBwLWlkPSIyMzI5Ij48L3BhdGg+PHBhdGggZD0iTTMxMS45NTQyODYgNTk2LjAyNjUxNGMtMjAuMjc1MiAyMC4yNzUyLTkwLjExMiAxNTcuNjk2LTY1LjMzMTIgMTgyLjQ3NjggMjQuNzgwOCAyNC43ODA4IDEzNC4wNDE2LTc0LjM0MjQgMTU0LjMzMTQyOC05NC42MTc2IDIwLjI2MDU3MS0yMC4yNzUyIDE2Ljg4MTM3MS01Ni4zMi03Ljg5OTQyOC04MS4xMDA4LTI0Ljc4MDgtMjQuNzgwOC02MC44MjU2LTI3LjAzMzYtODEuMTAwOC02Ljc1ODR6IiBmaWxsPSIjQUJDNkY2IiBwLWlkPSIyMzMwIj48L3BhdGg+PC9zdmc+");
+    background-size: 40px 40px ;
+    background-repeat: no-repeat;
 }
 @font-face {
 font-family: 'raidercrusaderital';
@@ -159,6 +195,11 @@ width: 140px !important;
 
 margin-bottom: 56px;
 }
+
+
+
+
+
 </style>
 
 </head> 
@@ -176,7 +217,7 @@ margin-bottom: 56px;
         </div>
         </div>
         <div style="height:28px">
-            <el-button id="baoming-right" size="mini" type="primary" hidden="true" @click="window.open('https://wuba.xinghuo.58.com/visualization/share/26715','_blank', 'width=800,height=600,left=200,top=100')">开始报名</el-button>
+            <el-button id="baoming-right" size="mini" type="primary" hidden="true" @click="xtiper_open">开始报名</el-button>
         </div>
     </div>
     <div id="button-right"
@@ -185,7 +226,7 @@ margin-bottom: 56px;
 
         </div>
         <div style="height:28px">
-            <el-button id="baoming-left" size="mini" type="primary" hidden="true" style="z-index:1" @click="window.open('https://wuba.xinghuo.58.com/visualization/share/26715','_blank', 'width=800,height=600,left=200,top=100')">开始报名
+            <el-button id="baoming-left" size="mini" type="primary" hidden="true" style="z-index:1" @click="xtiper_open">开始报名
             </el-button>
         </div>
     </div>
@@ -214,7 +255,7 @@ margin-bottom: 56px;
 
 
 
-            <a  target="_blank" @click="window.open('https://wuba.xinghuo.58.com/visualization/share/26715','_blank', 'width=800,height=600,left=200,top=100')" 
+            <a  target="_blank" @click="xtiper_open" 
                 class="ant-btn ant-btn-primary propaganda-module_sign-up-btn"><span>前往报名页面</span></a><a
                 href="https://docs.qq.com/aio/DRklVaXFHaFVTanNu?p=Y9yQnlU7CL2b46IDV4cOVL"
                 target="_blank"
@@ -252,7 +293,14 @@ margin-bottom: 56px;
         <div class="propaganda-content-module_propaganda-content-width flex flex-col items-center">
             <div
                 class="propaganda-content-module_content-font1-container propaganda-content-module_activity-introduce-image">
-                <span class="propaganda-content-font1">大赛介绍</span>
+                <span class="propaganda-content-font1">大赛介绍    
+
+<el-tooltip class="item" effect="dark" content="大赛帮助文档,点击跳转" placement="top">
+       <i class="el-icon-question"  @click="window.open(' https://docs.qq.com/doc/DWmNibVhwUm1DWnBS?no_promotion=1&nlc=1','_blank')"> </i>
+    </el-tooltip>
+
+
+
             </div>
             <div class="propaganda-content-module_activity-introduce-container flex gap-16 w-full">
                 <div
@@ -541,8 +589,8 @@ margin-bottom: 56px;
     </div>
     <div class="propaganda-module_footer flex items-center justify-center">
         <div>
-            <div class="propaganda-module_footer-font">微信扫码关注</div><img src="https://wos2.58cdn.com.cn/MnOjIhGfMnSn/xinghuobackend/6496ad81b1c24409b66b335e52b0f582.svg" style="margin: 0px auto;">
-            <div class="propaganda-module_footer-font mt-10">邮箱：xh_feedback@58.com</div>
+            <div class="propaganda-module_footer-font">微信扫码关注</div><img src="https://rrc.58cdn.com.cn/xinghuo_apply/erweima.png" style="margin: 0px auto;">
+            <!--<div class="propaganda-module_footer-font mt-10">邮箱：xh_feedback@58.com</div>-->
         </div>
     </div>
 </div>
@@ -698,6 +746,34 @@ const app = new Vue({
 
    },
   methods: {
+    iframeLoaded(){console.log("加载完成")},
+
+    xtiper_open(){
+                this.$confirm(
+                    `<div style="width:800px;height:400px;overflow:hidden"><iframe id="signup_iframe" class="signup" src="https://wuba.xinghuo.58.com/visualization/share/26715"  style="overflow: hidden;" width="800" height="400" scrolling="no"> </iframe><div>`,'报名参赛',{
+                        type:'warning',
+                        dangerouslyUseHTMLString: true,
+                        showConfirmButton:false,
+                        showCancelButton:false,
+                        center:true,
+                        iconClass:'signup_icon',}
+               );
+
+       /* 
+        xtip.open({
+            type: 'url',
+            content: 'https://wuba.xinghuo.58.com/visualization/share/26715',
+            title: '报名参赛',
+            width: '800px',
+            height: '450px',
+          
+            lock:true,
+            over:true,
+            app:true,
+            closeBtn: true,
+            })*/
+
+    }
   }
 }
 )
